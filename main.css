@@ -1,0 +1,65 @@
+body{
+    background-image: radial-gradient(circle, #0C4A47, #0c423f);
+    background-attachment: fixed;
+    margin: 0;
+}
+
+.TopBar{
+    width: 100%;
+    height: 4vw;
+    background-color: #05302d;
+    position: fixed;
+
+    font-size: 2vw;
+    color: white;
+    border: none;
+
+    z-index: 9999;
+    
+}
+
+.MainHolder{
+    position: relative;
+    margin: 0;
+    width: 80%;
+    height: 50vw;
+    left: 10%;
+    top: 10vw;
+    background-image: radial-gradient(circle, #0b5350, #09635e);
+    border-radius: 2vw;
+
+    .BellImage{
+        position: relative;
+        height: 7.5vw;
+
+        z-index: 99;
+    }
+
+    #Top-Left{
+        left: -4vw;
+        top: -2vw;
+        rotate: 15deg;
+    }
+    #Top-Right{
+        left: 64vw;
+        top: -2vw;
+        rotate: -10deg;
+    }
+
+    .SlingerImage{
+        position: absolute;
+        height: 7.5vw;
+    }
+
+    #Slinger1{
+        left: -0vw;
+    }
+
+    #Slinger2{
+        left: 20vw;
+    }
+
+    #Slinger3{
+        left: 47.8vw;
+    }
+}
