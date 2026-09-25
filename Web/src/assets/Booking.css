@@ -88,3 +88,76 @@
     background-color: rgba(255, 60, 60, 0.15);
     color: #ff3c3c;
 }
+
+@media only screen and (max-width: 720px) {
+    .booking-page{
+        max-width: none;
+        margin: 6vw auto 10vw;
+        padding: 0 5vw;
+    }
+
+    .booking-page h1{
+        margin-bottom: 6vw;
+        font-size: 8vw;
+    }
+
+    .booking-step{
+        margin-bottom: 8vw;
+    }
+
+    .booking-step h2{
+        margin-bottom: 3vw;
+        font-size: 5vw;
+    }
+
+    .booking-step p{
+        font-size: 4vw;
+    }
+
+    .service-options{
+        flex-direction: column;
+        gap: 3vw;
+    }
+
+    .slot-options{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 2.5vw;
+    }
+
+    .service-option,
+    .slot-option{
+        padding: 3.5vw 4vw;
+        border-radius: 2vw;
+        font-size: 4.2vw;
+    }
+
+    .service-option{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        text-align: left;
+    }
+
+    .date-input,
+    .booking-input{
+        margin-bottom: 3vw;
+        padding: 3.5vw 4vw;
+        border-radius: 2vw;
+        font-size: 4.2vw;
+    }
+
+    .confirm-button{
+        width: 100%;
+        padding: 4vw;
+        border-radius: 2vw;
+        font-size: 4.5vw;
+    }
+
+    .booking-message{
+        margin-top: 5vw;
+        padding: 3.5vw 4vw;
+        border-radius: 2vw;
+        font-size: 4vw;
+    }
+}
