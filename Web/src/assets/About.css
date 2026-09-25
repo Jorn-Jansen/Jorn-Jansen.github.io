@@ -1,0 +1,120 @@
+.about-hero{
+    position: relative;
+    height: 15vw;
+}
+
+.about-hero-img{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: 50% 35%;
+}
+
+.about-hero-overlay{
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.45);
+}
+
+.about-hero-title{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin: 0;
+    font-size: 3.5vw;
+    color: white;
+    text-shadow: 0 0.15vw 0.6vw rgba(0, 0, 0, 0.6);
+}
+
+.about-content{
+    width: 85%;
+    margin: 0 auto;
+    padding-bottom: 4vw;
+}
+
+.about-text{
+    max-width: 50vw;
+    margin: 0 auto 1.5vw;
+    font-size: 1.1vw;
+    line-height: 1.8;
+    text-align: center;
+}
+
+.about-values{
+    display: flex;
+    gap: 2vw;
+    margin-bottom: 3vw;
+}
+
+.about-value{
+    flex: 1;
+    padding: 2vw;
+    background-color: var(--color-background-soft);
+    border-radius: 15px;
+    text-align: center;
+    transition: transform .2s;
+}
+
+.about-value:hover{
+    transform: scale(1.025);
+}
+
+.about-value-title{
+    margin-bottom: 0.6vw;
+    font-size: 1.4vw;
+    font-weight: bold;
+    color: var(--color-heading);
+}
+
+.about-value-text{
+    font-size: 1vw;
+}
+
+@media only screen and (max-width: 720px) {
+    .about-hero{
+        height: 40vw;
+    }
+
+    .about-hero-title{
+        font-size: 9vw;
+    }
+
+    .about-content{
+        width: 90%;
+    }
+
+    .about-content .section-heading{
+        gap: 3vw;
+        max-width: 90%;
+        margin: 6vw auto;
+        font-size: 4.5vw;
+        letter-spacing: 0.8vw;
+    }
+
+    .about-text{
+        max-width: 100%;
+        margin-bottom: 4vw;
+        font-size: 4vw;
+    }
+
+    .about-values{
+        flex-direction: column;
+        gap: 4vw;
+        margin-bottom: 8vw;
+    }
+
+    .about-value{
+        padding: 5vw;
+    }
+
+    .about-value-title{
+        margin-bottom: 1.5vw;
+        font-size: 5vw;
+    }
+
+    .about-value-text{
+        font-size: 3.8vw;
+    }
+}

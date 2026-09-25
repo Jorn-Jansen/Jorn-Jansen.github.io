@@ -50,11 +50,11 @@
         </nav>
 
         <button @click="goToBooking" class="topbar-book-button"><span class="topbar-book-icon"></span> Book appointment</button>
-      </div>
 
-      <div class="topbar-themebox">
-        <button @click="themeDark" class="theme-toggle-button" id="dark-toggle">🌙</button>
-        <button @click="themeLight" class="theme-toggle-button" id="light-toggle">☀️</button>
+        <div class="topbar-themebox">
+          <button @click="themeDark" class="theme-toggle-button" id="dark-toggle">🌙</button>
+          <button @click="themeLight" class="theme-toggle-button" id="light-toggle">☀️</button>
+        </div>
       </div>
 
       <button class="topbar-burger" @click="menuOpen = !menuOpen" aria-label="Toggle menu" :aria-expanded="menuOpen">

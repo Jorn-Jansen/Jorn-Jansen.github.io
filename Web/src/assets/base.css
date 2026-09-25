@@ -1,6 +1,8 @@
 @import "./Home.css";
 @import "./Booking.css";
 @import "./Auth.css";
+@import "./About.css";
+@import "./Price.css";
 
 /* color palette from <https://github.com/vuejs/theme> */
 :root {
@@ -248,6 +250,37 @@ body {
   font-size: 1vw;
 }
 
+.cta-holder{
+  display: flex;
+  justify-content: center;
+}
+
+.cta-button{
+  padding: 0.8vw 2vw;
+  border: 2px solid #006fff;
+  border-radius: .4vw;
+  background-color: transparent;
+  color: var(--color-heading);
+  font-size: 1.2vw;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.2s, color 0.2s, box-shadow 0.2s;
+}
+
+.cta-button:hover{
+  background-color: #006fff;
+  color: black;
+  box-shadow: 0 0 0.8vw rgba(0, 111, 255, 0.5);
+}
+
+@media only screen and (max-width: 720px) {
+  .cta-button{
+    padding: 3vw 6vw;
+    border-radius: 1.5vw;
+    font-size: 4vw;
+  }
+}
+
 .topbar-menu{
   display: flex;
   align-items: center;
@@ -264,8 +297,25 @@ body {
   }
 
   .topbar-themebox{
-    transform: scale(150%);
-    margin-right: 3vw;
+    width: 100%;
+  }
+
+  .theme-toggle-button{
+    flex: 1;
+    align-items: center;
+    width: auto;
+    height: 12vw;
+    font-size: 6vw;
+  }
+
+  #dark-toggle{
+    border-top-left-radius: 2vw;
+    border-bottom-left-radius: 2vw;
+  }
+
+  #light-toggle{
+    border-top-right-radius: 2vw;
+    border-bottom-right-radius: 2vw;
   }
 
   .topbar-burger{
