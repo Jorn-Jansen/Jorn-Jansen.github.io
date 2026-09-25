@@ -1,0 +1,90 @@
+.booking-page{
+    max-width: 40vw;
+    margin: 3vw auto;
+    padding: 0 2vw;
+}
+
+.booking-step{
+    margin-bottom: 2vw;
+}
+
+.service-options,
+.slot-options{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.8vw;
+}
+
+.service-option,
+.slot-option{
+    padding: 0.6vw 1.2vw;
+    border: 2px solid var(--color-border-hover);
+    border-radius: .4vw;
+    background-color: var(--color-background-soft);
+    color: var(--color-text);
+    cursor: pointer;
+    transition: border-color 0.2s, background-color 0.2s;
+}
+
+.service-option:hover,
+.slot-option:hover{
+    border-color: #006fff;
+}
+
+.service-option.selected,
+.slot-option.selected{
+    border-color: #006fff;
+    background-color: #006fff;
+    color: white;
+}
+
+.service-minutes{
+    opacity: 0.7;
+    font-size: 0.85em;
+}
+
+.date-input,
+.booking-input{
+    display: block;
+    width: 100%;
+    padding: 0.6vw 1vw;
+    margin-bottom: 0.8vw;
+    border: 2px solid var(--color-border-hover);
+    border-radius: .4vw;
+    background-color: var(--color-background-soft);
+    color: var(--color-text);
+    font-size: 1vw;
+}
+
+.confirm-button{
+    padding: 0.7vw 1.6vw;
+    border: none;
+    border-radius: .4vw;
+    background-color: #006fff;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    transition: opacity 0.2s;
+}
+
+.confirm-button:disabled{
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+.booking-message{
+    margin-top: 1.5vw;
+    padding: 0.8vw 1vw;
+    border-radius: .4vw;
+    font-weight: bold;
+}
+
+.booking-message.success{
+    background-color: rgba(0, 200, 100, 0.15);
+    color: #00c864;
+}
+
+.booking-message.error{
+    background-color: rgba(255, 60, 60, 0.15);
+    color: #ff3c3c;
+}

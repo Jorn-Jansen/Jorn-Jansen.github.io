@@ -1,0 +1,160 @@
+.home-hero{
+    position: relative;
+    height: 30vw;
+}
+
+.home-overlay{
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.35);
+}
+
+.topbanner{
+    position: absolute;
+    width: 100%;
+    height: 30vw;
+    object-fit: cover;
+    object-position: 50% 35%;
+}
+
+.home-title{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin: 0;
+    text-align: center;
+    font-size: 4vw;
+    color: white;
+    text-shadow: 0 0.15vw 0.6vw rgba(0, 0, 0, 0.6);
+}
+
+.home-book-button{
+    position: absolute;
+    top: 75%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.6vw;
+    margin: 0;
+    text-align: center;
+    font-size: 1.5vw;
+    padding: 0.8vw 1.2vw;
+    border-radius: .5vw;
+    background-color: transparent;
+    color: white;
+    border: 2px solid greenyellow;
+    font-weight: bold;
+    cursor: pointer;
+    box-shadow: 0 0.2vw 0.6vw rgba(0, 0, 0, 0.4);
+    transition: transform 0.2s, box-shadow 0.2s, background-color 0.2s, color 0.2s;
+}
+
+.home-book-icon{
+    display: inline-block;
+    height: 1.5vw;
+    width: 1.5vw;
+    background-color: greenyellow;
+    -webkit-mask: url('/calendar.png') no-repeat center / contain;
+    mask: url('/calendar.png') no-repeat center / contain;
+}
+
+.home-book-button:hover{
+    background-color: #9fe000;
+    box-shadow: 0 0 2vw rgba(173, 255, 47, 0.5);
+    transform: translate(-50%, -50%) scale(1.05);
+}
+
+.home-book-button:hover .home-book-icon{
+    background-color: black;
+}
+
+.section-heading{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5vw;
+    margin: 3vw auto;
+    max-width: 40vw;
+    text-transform: uppercase;
+    letter-spacing: 0.25vw;
+    font-weight: bold;
+    font-size: 1.3vw;
+    color: var(--color-heading);
+}
+
+.section-heading::before,
+.section-heading::after{
+    content: "";
+    flex: 1;
+    height: 2px;
+    background-color: var(--color-border-hover);
+}
+
+.services-holder{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 85%;
+    height: 20vw;
+    background-color: var(--topbar-color);
+    margin: 0 auto;
+    border-radius: 15px;
+}
+
+.services{
+    position: relative;
+    width: 20%;
+    height: 85%;
+    background-color: var(--color-background-soft);
+    border-radius: 15px;
+    transition: transform .2s;
+}
+
+.services:hover{
+    transform: scale(1.025);
+}
+
+.services-i{
+    position: absolute;
+    display: block;
+    width: 75%;
+    aspect-ratio: 1;
+    left: 50%;
+    top: 5%;
+    transform: translate(-50%);
+    background-color: var(--color-heading);
+    mask-repeat: no-repeat;
+    mask-position: center;
+    mask-size: contain;
+    -webkit-mask-repeat: no-repeat;
+    -webkit-mask-position: center;
+    -webkit-mask-size: contain;
+}
+
+.services-h{
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, 0%);
+    width: 100%;
+    margin: 0;
+    text-align: center;
+    color: var(--color-heading);
+}
+
+.services-p{
+    position: absolute;
+    top: 75%;
+    width: 75%;
+    font-size: 1vw;
+    text-align: center;
+    left: 50%;
+    transform: translate(-50%, 0%);
+}
+
+.footer{
+    height: 5vw;
+}

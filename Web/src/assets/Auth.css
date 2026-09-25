@@ -1,0 +1,74 @@
+.auth-page{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: calc(100vh - 5vw);
+    padding: 10px 0;
+    background-image: url('/chair%20banner.png');
+    background-size: cover;
+    background-position: 50% 35%;
+}
+
+.input-group{
+    position: relative;
+    width: 75%;
+    margin: 0.8vw auto 0;
+}
+
+.input-icon{
+    position: absolute;
+    top: 50%;
+    left: 0.8vw;
+    transform: translateY(-50%);
+    height: 1vw;
+    width: 1vw;
+    color: var(--color-border-hover);
+    pointer-events: none;
+}
+
+.login-holder{
+    height: 28vw;
+    width: 40vw;
+    background-color: var(--topbar-color);
+    border-radius: 15px;
+}
+
+.login-button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5vw;
+    position: relative;
+    top: 50%;
+    width: 20%;
+    height: 10%;
+    left: 50%;
+    transform: translate(-50%);
+    border-radius: 10px;
+    color: var(--text-color);
+    font-size: 1vw;
+    background-color: transparent;
+    border: 2px solid #006fff;
+    transition: transform .2s;
+}
+
+.login-button:hover{
+    transform: translate(-50%) scale(1.05);
+    background-color: #006fff;
+    box-shadow: 0 0 1vw #006fff;
+    color: black;
+}
+
+.login-icon{
+    display: inline-block;
+    height: 2vw;
+    width: 2vw;
+    background-color: #006fff;
+    -webkit-mask: url('/login.png') no-repeat center / contain;
+    mask: url('/login.png') no-repeat center / contain;
+    transition: background-color 0.2s;
+}
+
+.login-button:hover .login-icon{
+    background-color: black;
+}
