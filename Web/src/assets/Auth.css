@@ -9,9 +9,17 @@
     background-position: 50% 35%;
 }
 
+.login-logo{
+    position: absolute;
+    height: 9vw;
+    left: 50%;
+    transform: translate(-50%, 15%);
+}
+
 .input-group{
     position: relative;
     width: 75%;
+    top: 45%;
     margin: 0.8vw auto 0;
 }
 
@@ -27,10 +35,12 @@
 }
 
 .login-holder{
-    height: 28vw;
+    height: 25vw;
     width: 40vw;
     background-color: var(--topbar-color);
     border-radius: 15px;
+    border: #595959 solid .1vw;
+    box-shadow: 0 0 5vw 2vw #000000;
 }
 
 .login-button{
@@ -39,7 +49,7 @@
     justify-content: center;
     gap: 0.5vw;
     position: relative;
-    top: 50%;
+    top: 55%;
     width: 20%;
     height: 10%;
     left: 50%;
@@ -71,4 +81,11 @@
 
 .login-button:hover .login-icon{
     background-color: black;
+}
+
+.login-error{
+    text-align: center;
+    color: #ff5c5c;
+    font-size: 0.9vw;
+    margin-top: 0.5vw;
 }

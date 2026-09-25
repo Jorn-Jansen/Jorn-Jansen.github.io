@@ -1,6 +1,6 @@
 <script setup>
   import {RouterLink, RouterView} from 'vue-router'
-  import TopBar from "./components/TopBar.vue"
+  import TopBar from "./components/Topbar.vue"
 </script>
 
 <template>
